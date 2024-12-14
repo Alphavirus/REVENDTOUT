@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Paiement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- En-tête -->
+    </header>
+
+    <section class="checkout">
+        <h1>Informations de Paiement</h1>
+        <form id="checkout-form">
+            <label for="name">Nom Complet :</label>
+            <input type="text" id="name" required>
+            <label for="address">Adresse de Livraison :</label>
+            <input type="text" id="address" required>
+            <label for="payment-method">Méthode de Paiement :</label>
+            <select id="payment-method">
+                <option value="credit-card">Carte de Crédit</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            <button type="submit">Confirmer la commande</button>
+        </form>
+    </section>
+
+    <footer>
+        <!-- Pied de page -->
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

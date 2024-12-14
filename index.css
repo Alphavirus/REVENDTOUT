@@ -1,0 +1,597 @@
+
+
+/* css */ 
+
+html {
+    scroll-behavior: smooth; /* scroller de façon flex */ 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header 
+
+ {
+    background-image: url('images/imgb.jpg');
+    background-position: center;
+    background-size: cover; background-repeat: no-repeat;
+    height: 100vh;
+ }
+
+ body
+  {
+    line-height: 1.6;
+  }
+
+
+/* navbar */ 
+
+#navbar {
+     /* Black background color */
+    position: fixed; top: 0;
+    width: 100%;
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+  
+  /* Style the navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase; 
+    font-weight:700; letter-spacing: 1px;
+    margin-left: 10px; font-size: 14px;
+  }
+
+  span
+   {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase; 
+    font-weight: 700; letter-spacing: 1px;
+    gap: 20px;
+    font-size: 22px;
+    background-color: rgb(193, 193, 38);
+   }
+  
+   #logo img {
+    width: 150px;
+    height: 0px;
+    margin-right: 10px;
+    
+   }
+  #navbar a:hover {
+    color: black;
+  }
+
+
+  main {
+    background-color: #ebe6e651;
+  }
+  
+  main p {
+     text-align: center;
+     color: #a4a4a4;font-weight: 750;
+     font-size: 25px; letter-spacing: 2.5px;
+  }
+
+  /* vcard */ 
+
+
+  #cards
+   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+   }
+
+  .cardprincip
+   {
+     display: flex;
+     gap: 30px;
+   }
+  
+  .card
+   {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+   }
+
+   .card.large {
+    flex: 2; /* Prend deux fois plus d'espace */
+    height: 300px; box-shadow: 0 4px 30px rgba(69, 66, 66, 0.525);}
+
+    .card.large img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+     
+      /* Carte secondaire (petite) */
+      .card.small {
+        flex: 2; /* Prend moins d'espace */
+        height: 300px;
+        box-shadow: 0 4px 30px rgba(69, 66, 66, 0.525);
+      }
+      
+      .card.small img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* overlay */
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(114, 108, 108, 0.466); /* Couche sombre */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.21s ease-in-out;
+      }
+
+      .card.large:hover .overlay
+       {
+        opacity: 1;
+        cursor: pointer;
+       }
+
+       .card.small:hover .overlay
+       {
+        opacity: 1;
+        cursor: pointer;
+       }
+      
+      .overlay a
+       {
+        font-size: 20px; font-weight: bold;
+        color: rgb(241, 241, 241); text-decoration: none;
+        transition: all 0.3ms;
+       }
+
+       .overlay a:hover {
+        color: rgb(84, 142, 136);
+        transform: scaleX(1.09);
+        font-weight: bold;  
+       }
+
+
+
+      .categories {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 50px 0;
+    }
+    
+    .categories a {
+        text-decoration: none;
+        color: #868181;
+        font-weight: 350;
+        font-size: 16px;
+        margin-top: 30px; font-weight: 620;
+    }
+    
+    .custom-hr {
+    border: none; /* Enlève les bordures par défaut */
+    border-top: 2px solid #a4a4a4; /* Définit une bordure en haut (la ligne) */
+    width: 87%; /* La ligne occupe 50% de la largeur de son conteneur */
+    margin: 20px auto;
+    }
+
+
+      /* produits */ 
+
+
+      .products {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .products article {
+        background : linear-gradient(rgba(189, 181, 182, 0.795), white);
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 30px rgba(177, 172, 172, 0.53);
+    }
+    
+    .product-card {
+        
+    }
+    
+    .product-card:hover
+     {
+        color: #ede6e6;
+        
+        cursor: pointer;
+     }
+    
+    .products .image-container img {
+        width: 45%;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .products .image-container:hover img { 
+          transform: scale(1.06);
+    }
+    .products h2 {
+    
+        font-size: 14px;
+        margin: 10px 0;
+        font-weight: 350;
+    }
+    
+    .products p {
+        font-size: 14px;
+        color: #777;
+    }
+
+    .products .hover-button {
+
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        opacity: 0; /* caché par defaut */
+        cursor: pointer;
+        transition: opacity 0.3 ease-in-out;
+        pointer-events: none;
+    }
+   
+    .products .image-container:hover .hover-button
+     {
+        opacity: 1;
+        pointer-events: auto;
+     }
+
+
+     /* section de la categorie bas */
+
+
+     .bas
+      {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+
+
+      .bas   article {
+        background : linear-gradient(rgba(189, 181, 182, 0.795), white);
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 30px rgba(177, 172, 172, 0.53);
+    }
+
+    .bas .image-container img {
+        width: 80%;
+        height: auto;
+        transition: transform 0.19s ease-in-out;
+    }
+
+     
+    .bas .image-container:hover img { 
+          transform: scale(1.05);
+    }
+
+    .shoes
+     {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        gap: 20px;
+        padding: 20px;
+     }
+
+
+     .shoes article {
+        background :linear-gradient(gray, rgb(216, 204, 204));
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 30px rgba(177, 172, 172, 0.53);
+     }
+
+     .shoes .image-container img {
+        width: 50%;
+        height: 100%;
+        transition: transform 0.192s ease-in-out;
+    }
+
+    .shoes .image-container:hover img {
+        transform: scale(1.02);
+        }
+
+    
+
+        .allimg
+         {
+           display: grid;
+           grid-template-columns: repeat(6, 1fr);
+           gap: 0;
+           width: 100%;
+           max-width: 1200px;
+           margin: 0 auto;
+
+         }
+
+
+         .allimg img {
+           width: 100%;
+           height: auto;
+           object-fit: cover;
+           display: block;
+           box-shadow: 0 4px 30px rgba(177, 172, 172, 0.53);
+            border: none;
+         }
+
+
+ /* section 'qui sommes-nous' ? */ 
+
+section.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+  gap: 20px;
+  align-items: center;
+  padding: 40px;
+  background-color: #fffdfd;
+}
+
+.grid-item {
+  padding: 20px;
+}
+
+.grid-item.image img {
+  width: 70%; /* L'image occupe toute sa colonne */
+  border-radius: 10px; /* Coins arrondis */
+  height: 30%;
+  box-shadow: 0 4px 30px rgba(173, 169, 169, 0.53);
+}
+
+.grid-item.text h4 {
+  margin-bottom: 15px;
+  font-size: 32px;text-transform: uppercase;
+  font-weight: 700; color: #494545;
+}
+
+
+
+/* footer */ 
+
+form {
+   height: 480px;
+   margin: 23px ;
+   font-size: 28px;
+   text-align: center;
+   background-color: #91adc4b2;
+   
+}
+
+form text {
+  color: #454040;font-weight: 700;
+  
+}
+
+form input 
+ {
+   padding: 10px;
+   width: 50%;
+   height: 10%;
+   border-radius: 0;
+   border: none;
+ }
+
+ form button {
+   width: 20%;
+   height: 10%;
+   border-radius: none;
+   border: none;
+   font-size: 14px;
+ }
+
+ form button:hover 
+  {
+    color: #fff; font-weight: 600;
+    background-color: rgba(14, 87, 14, 0.564);
+    cursor: pointer;
+  }
+
+ form h6 {
+   font-weight: 700;
+   color: #454040;
+ }
+
+ blockquote
+  {
+     font-size: 12px; font-weight: 600;
+     color: #454040;
+  }
+
+   form a:hover i {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #494545;
+   }
+  form a i 
+   {
+     font-size: 15px;
+     text-decoration: none;
+     transition: all 0.199s ease-in-out;
+     color: #151414d6;
+     font-weight: bold;
+   }
+
+/* animation */ 
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Sections masquées par défaut */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px); /* Décalage vers le bas */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Quand une section devient visible */
+.hidden.show {
+  opacity: 1;
+  transform: translateY(0); /* Retour à la position normale */
+}
+
+
+/* Effet hover pour les boutons (par exemple dans le footer) */
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Ajout d'un style pour remonter en haut */
+a i {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+a i:hover {
+  color: #555; /* Changement de couleur au survol */
+}
+
+
+
+/* responsive */ 
+
+
+/* Petits écrans (tablettes et mobiles) */
+@media screen and (max-width: 768px) {
+
+    /* Navbar responsive */
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar a {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    span {
+      font-size: 13px;
+    }
+
+    /* Cartes en grille verticale */
+    .cardprincip {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* Catégories */
+    .categories {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .categories a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 16px;
+    }
+}
+
+/* Très petits écrans (mobiles uniquement) */
+@media screen and (max-width: 480px) {
+
+    /* Texte plus petit pour les mobiles */
+    body {
+        font-size: 14px;
+    }
+
+    #logo {
+        font-size: 20px;
+    }
+
+    /* Produits en grille verticale */
+    .products, .bas, .shoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    /* Footer */
+    form {
+        text-align: center;
+        padding: 10px;
+    }
+
+    form input {
+        width: 90%;
+        padding: 10px;
+    }
+
+    form button {
+        width: 50%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+

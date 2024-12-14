@@ -1,0 +1,273 @@
+[debug] [2024-12-13T19:29:52.487Z] ----------------------------------------------------------------------
+[debug] [2024-12-13T19:29:52.494Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-12-13T19:29:52.495Z] CLI Version:   13.29.0
+[debug] [2024-12-13T19:29:52.496Z] Platform:      win32
+[debug] [2024-12-13T19:29:52.496Z] Node Version:  v22.11.0
+[debug] [2024-12-13T19:29:52.497Z] Time:          Fri Dec 13 2024 19:29:52 GMT+0000 (heure moyenne de Greenwich)
+[debug] [2024-12-13T19:29:52.497Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-13T19:29:52.521Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-13T19:29:52.522Z] > authorizing via signed-in user (kadertraore2002@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\HP\Downloads\sitecom\sitecom
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-12-13T19:46:03.712Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:46:03.712Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:46:03.714Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-12-13T19:46:03.714Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"REVENT00T","name":"REVENT00T"}
+[debug] [2024-12-13T19:46:04.949Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2024-12-13T19:46:04.949Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2024-12-13T19:46:05.433Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at responseToError (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-12-13T19:46:45.664Z] ----------------------------------------------------------------------
+[debug] [2024-12-13T19:46:45.667Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-12-13T19:46:45.668Z] CLI Version:   13.29.0
+[debug] [2024-12-13T19:46:45.668Z] Platform:      win32
+[debug] [2024-12-13T19:46:45.668Z] Node Version:  v22.11.0
+[debug] [2024-12-13T19:46:45.668Z] Time:          Fri Dec 13 2024 19:46:45 GMT+0000 (heure moyenne de Greenwich)
+[debug] [2024-12-13T19:46:45.668Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-13T19:46:45.680Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-13T19:46:45.681Z] > authorizing via signed-in user (kadertraore2002@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\HP\Downloads\sitecom\sitecom
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-12-13T19:47:30.297Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:47:30.297Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:47:30.300Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-12-13T19:47:31.155Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-12-13T19:47:31.155Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project reventtout (reventtout) 
+[info] 
+=== Dataconnect Setup
+[debug] [2024-12-13T19:47:51.922Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:47:51.922Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:47:51.923Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/reventtout/billingInfo [none]
+[debug] [2024-12-13T19:47:52.742Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/reventtout/billingInfo 200
+[debug] [2024-12-13T19:47:52.743Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/reventtout/billingInfo {"name":"projects/reventtout/billingInfo","projectId":"reventtout","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2024-12-13T19:47:52.746Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:47:52.746Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:47:52.747Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/sqladmin.googleapis.com [none]
+[debug] [2024-12-13T19:47:52.747Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/sqladmin.googleapis.com x-goog-quota-user=projects/reventtout
+[debug] [2024-12-13T19:47:54.184Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/sqladmin.googleapis.com 200
+[debug] [2024-12-13T19:47:54.184Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/sqladmin.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2024-12-13T19:47:54.189Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:47:54.189Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:47:54.189Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/reventtout/services/sqladmin.googleapis.com:enable [none]
+[debug] [2024-12-13T19:47:54.190Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/reventtout/services/sqladmin.googleapis.com:enable x-goog-quota-user=projects/reventtout
+[debug] [2024-12-13T19:47:54.899Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/reventtout/services/sqladmin.googleapis.com:enable 200
+[debug] [2024-12-13T19:47:54.899Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/reventtout/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2024-12-13T19:48:04.907Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:48:04.907Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:48:04.908Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/sqladmin.googleapis.com [none]
+[debug] [2024-12-13T19:48:04.908Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/sqladmin.googleapis.com x-goog-quota-user=projects/reventtout
+[debug] [2024-12-13T19:48:06.053Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/sqladmin.googleapis.com 200
+[debug] [2024-12-13T19:48:06.054Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/sqladmin.googleapis.com [omitted]
+[info] +  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] +  Wrote dataconnect\dataconnect.yaml 
+[info] +  Wrote dataconnect\schema\schema.gql 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[info] +  Wrote dataconnect\connector\queries.gql 
+[info] +  Wrote dataconnect\connector\mutations.gql 
+[info] +  Detected WEB app in directory C:\Users\HP\Downloads\sitecom\sitecom 
+[info] i  Wrote new config to C:\Users\HP\Downloads\sitecom\sitecom\dataconnect\connector/connector.yaml 
+[info] i  dataconnect: downloading dataconnect-emulator-1.7.5.exe... {"metadata":{"emulator":{"name":"dataconnect"},"message":"downloading dataconnect-emulator-1.7.5.exe..."}}
+[debug] [2024-12-13T19:52:24.978Z] >>> [apiv2][query] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v1.7.5 
+[debug] [2024-12-13T19:52:25.557Z] <<< [apiv2][status] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v1.7.5 200
+[debug] [2024-12-13T19:52:25.557Z] <<< [apiv2][body] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v1.7.5 [stream]
+[info] I1213 19:52:37.243564   17400 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\HP\\Downloads\\sitecom\\sitecom\\dataconnect-generated\\js\\default-connector"
+I1213 19:52:37.246522   17400 generate.go:40] Generated all sources. Writing them to disk...
+I1213 19:52:37.252543   17400 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\HP\\Downloads\\sitecom\\sitecom\\dataconnect-generated\\js\\default-connector"
+Generated sources: esm\index.esm.js [180B] esm\package.json [17B] index.cjs.js [221B] package.json [634B] index.d.ts [264B] 
+I1213 19:52:37.269856   17400 installsdk.go:76] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+
+[info] i  Generated SDK code for default 
+[info] +  If you'd like to add more generated SDKs to your app your later, run firebase init dataconnect:sdk again 
+[info] i  If you'd like to provision a CloudSQL Postgres instance on the Firebase Data Connect no-cost trial:
+1. Please upgrade to the pay-as-you-go (Blaze) billing plan. Visit the following page:
+     https://console.firebase.google.com/project/reventtout/usage/details
+2. Run firebase init dataconnect again to configure the Cloud SQL instance.
+3. Run firebase deploy --only dataconnect to deploy your Data Connect service. 
+[info] 
+=== Firestore Setup
+[debug] [2024-12-13T19:52:40.537Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:52:40.537Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:52:40.537Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/firestore.googleapis.com [none]
+[debug] [2024-12-13T19:52:40.537Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/firestore.googleapis.com x-goog-quota-user=projects/reventtout
+[debug] [2024-12-13T19:52:41.601Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/firestore.googleapis.com 200
+[debug] [2024-12-13T19:52:41.601Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/firestore.googleapis.com [omitted]
+[debug] [2024-12-13T19:52:41.603Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:52:41.603Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:52:41.603Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/reventtout/databases/(default) [none]
+[debug] [2024-12-13T19:52:42.659Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/reventtout/databases/(default) 200
+[debug] [2024-12-13T19:52:42.659Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/reventtout/databases/(default) {"name":"projects/reventtout/databases/(default)","uid":"5025b3fb-1225-4f73-b146-e415e1cc95cd","createTime":"2024-12-13T19:04:02.673232Z","updateTime":"2024-12-13T19:04:02.673232Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-12-13T19:04:02.673232Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IKG4ouPCpYoDMNCk8fO3pYoD"}
+[debug] [2024-12-13T19:52:42.659Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-12-13T19:52:42.659Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-12-13T19:52:42.660Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-13T19:52:42.661Z] > authorizing via signed-in user (kadertraore2002@gmail.com)
+[debug] [2024-12-13T19:52:42.661Z] [iam] checking project reventtout for permissions ["firebase.projects.get"]
+[debug] [2024-12-13T19:52:42.663Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:52:42.663Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:52:42.663Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/reventtout:testIamPermissions [none]
+[debug] [2024-12-13T19:52:42.663Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/reventtout:testIamPermissions x-goog-quota-user=projects/reventtout
+[debug] [2024-12-13T19:52:42.664Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reventtout:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-13T19:52:43.651Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/reventtout:testIamPermissions 200
+[debug] [2024-12-13T19:52:43.651Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reventtout:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-12-13T19:55:43.450Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:55:43.450Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:55:43.451Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:55:43.451Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:55:43.451Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/reventtout/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-12-13T19:55:43.456Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/reventtout/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-12-13T19:55:44.482Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/reventtout/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-12-13T19:55:44.483Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/reventtout/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-12-13T19:55:44.790Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/reventtout/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-12-13T19:55:44.790Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/reventtout/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/reventtout/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Genkit Setup
+[debug] [2024-12-13T19:56:08.346Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-13T19:56:08.346Z] > authorizing via signed-in user (kadertraore2002@gmail.com)
+[debug] [2024-12-13T19:56:08.346Z] [iam] checking project reventtout for permissions ["firebase.projects.get"]
+[debug] [2024-12-13T19:56:08.349Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:56:08.349Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:56:08.349Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/reventtout:testIamPermissions [none]
+[debug] [2024-12-13T19:56:08.349Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/reventtout:testIamPermissions x-goog-quota-user=projects/reventtout
+[debug] [2024-12-13T19:56:08.350Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reventtout:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-13T19:56:09.260Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/reventtout:testIamPermissions 200
+[debug] [2024-12-13T19:56:09.261Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reventtout:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-13T19:56:09.261Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:56:09.261Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:56:09.261Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:56:09.262Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:56:09.262Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-13T19:56:09.262Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/reventtout
+[debug] [2024-12-13T19:56:09.267Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-12-13T19:56:09.268Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/reventtout
+[debug] [2024-12-13T19:56:10.410Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/runtimeconfig.googleapis.com 200
+[debug] [2024-12-13T19:56:10.410Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-12-13T19:56:10.414Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-13T19:56:10.415Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-12-13T19:56:10.415Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:56:10.416Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:56:10.416Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/reventtout/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2024-12-13T19:56:10.417Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/reventtout/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/reventtout
+[debug] [2024-12-13T19:56:11.530Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/reventtout/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2024-12-13T19:56:11.531Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/reventtout/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2024-12-13T19:56:21.533Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:56:21.534Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T19:56:21.534Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-13T19:56:21.534Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/reventtout
+[debug] [2024-12-13T19:56:22.682Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-13T19:56:22.684Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[info] i  genkit: Installing Genkit CLI version 0.9.12
+ 
+[info] i  genkit: Installing NPM packages for genkit 
+[info] +  genkit: Successfully installed NPM packages 
+[info] i  genkit: Updating tsconfig.json 
+[warn] !  genkit: Skipped updating tsconfig.json 
+[info] i  genkit: Updating package.json 
+[warn] !  genkit: Skipped updating package.json 
+[info] Start the Genkit developer experience by running:
+[info] 
+[info]     cd functions && npm run genkit:start
+[info] 
+=== Functions Setup
+[debug] [2024-12-13T20:05:10.345Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-13T20:05:10.345Z] > authorizing via signed-in user (kadertraore2002@gmail.com)
+[debug] [2024-12-13T20:05:10.345Z] [iam] checking project reventtout for permissions ["firebase.projects.get"]
+[debug] [2024-12-13T20:05:10.345Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T20:05:10.346Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T20:05:10.346Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/reventtout:testIamPermissions [none]
+[debug] [2024-12-13T20:05:10.346Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/reventtout:testIamPermissions x-goog-quota-user=projects/reventtout
+[debug] [2024-12-13T20:05:10.346Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reventtout:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-13T20:05:11.251Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/reventtout:testIamPermissions 200
+[debug] [2024-12-13T20:05:11.251Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reventtout:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-13T20:05:11.251Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T20:05:11.251Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T20:05:11.252Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T20:05:11.252Z] Checked if tokens are valid: true, expires at: 1734121736437
+[debug] [2024-12-13T20:05:11.252Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-13T20:05:11.252Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/reventtout
+[debug] [2024-12-13T20:05:11.258Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-12-13T20:05:11.258Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/reventtout
+[debug] [2024-12-13T20:05:12.370Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/runtimeconfig.googleapis.com 200
+[debug] [2024-12-13T20:05:12.371Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-12-13T20:05:12.379Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-13T20:05:12.379Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/reventtout/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
